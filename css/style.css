@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+    font-family: "Audiowide", cursive;
+}
+
+body {
+    color: #ffffff;
+    background: #181717;
+    background: -webkit-linear-gradient(to left, #333333, #1f1d1d);
+    background: linear-gradient(to left, #333333, #1f1d1d);
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.leaderboard {
+    margin-top: 40px;
+    display: none;
+}
+
+.leaderboard-show {
+    display: block;
+}
+
+/* HEADING TEXTS */
+.heading-text {
+    text-transform: uppercase;
+    margin: 50px 0;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.leaderboard-heading-text {
+    font-size: 30px;
+    margin-top: 65px;
+    margin-bottom: 15px;
+}
+
+.info-text {
+    color: #0081a7;
+    font-size: 24px;
+}
+
+.info-text-help {
+    color: #0081a7;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.info-text-h {
+    color: #f25f5c;
+}
+
+.info-text-h-red {
+    color: #db3a34;
+}
+
+/* FORM AND TIMER */
+.form {
+    width: 60%;
+    display: inline-block;
+}
+
+.form-leaderboard {
+    width: 100%;
+    display: inline-block;
+}
+
+.form-text-input {
+    color: #252323;
+    width: 100%;
+    font-size: 30px;
+    border: 4px solid transparent;
+    border-radius: 3px;
+    outline: none;
+    padding: 8px 20px;
+    background-color: rgb(189, 185, 185);
+}
+
+.form-leaderboard-input {
+    color: #252323;
+    width: 50%;
+    font-size: 25px;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    outline: none;
+    padding: 6px 12px;
+    background-color: rgb(240, 235, 235);
+}
+
+.form-leaderboard-score {
+    color: #252323;
+    width: 15%;
+    font-size: 25px;
+    border: 2px solid #0081a7;
+    border-radius: 3px;
+    outline: none;
+    padding: 6px 12px;
+    background-color: rgb(189, 185, 185);
+}
+
+.form-leaderboard-submit {
+    color: #0081a7;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px 18px;
+    width: 15%;
+    font-size: 25px;
+}
+
+.form-leaderboard-input:focus {
+    border: 2px solid #538d22;
+}
+
+.form-text-input:focus {
+    border: 4px solid #0081a7;
+}
+
+.time-left {
+    float: right;
+    font-size: 30px;
+    margin-right: 90px;
+    margin-top: 15px;
+    color: #db3a34;
+}
+
+/* CURRENT AND TOP SCORES */
+.scores {
+    margin-top: 100px;
+}
+
+.current-score {
+    font-size: 40px;
+}
+
+.current-score p {
+    display: inline-block;
+    margin: 0;
+}
+
+.top-score p {
+    display: inline-block;
+}
+
+.top-score {
+    font-size: 30px;
+}
+
+.current-score-text {
+    color: #acaaaa;
+}
+.top-score-text {
+    color: #636161;
+}
+
+.current-score-val {
+    color: #538d22;
+}
+
+.top-score-val {
+    color: #3e691a;
+}
+
+.global-leaderboard {
+    float: left;
+    margin-right: 90px;
+}
+
+.global-leaderboard-button,
+.global-leaderboard-button:active {
+    opacity: 0.8;
+    background-color: #0081a7;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    padding: 4px 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* SCORES */
+.scores {
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.scores-table {
+    padding: 10px;
+    width: 82%;
+    border: 2px solid #3e691a;
+}
+
+.score-row {
+    color: #f25f5c;
+}
+
+.scores-table-row-heading {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #3e691a;
+}
+
+.data-heading {
+    border-bottom: 2px solid #3e691a;
+    padding-bottom: 20px;
+}
+
+/* LOADING SPINNER */
+
+.loading {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.help-button {
+    float: right;
+    text-transform: uppercase;
+    background-color: #0081a7;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    opacity: 0.7;
+}

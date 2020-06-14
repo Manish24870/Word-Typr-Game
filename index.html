@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./img/icon.svg" />
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Word Typr</title>
+    </head>
+    <body>
+        <div class="container">
+            <button class="help-button">Help</button>
+            <div class="heading">
+                <div class="heading-text">WORD TYPR</div>
+                <p class="info-text">Type <span class="info-text-h">'start'</span> to start the game</p>
+            </div>
+            <div class="form-section">
+                <form class="form">
+                    <input class="form-text-input" type="text" placeholder="'start'" />
+                </form>
+                <p class="time-left">10.2 sec</p>
+            </div>
+            <div class="scores">
+                <div class="current-score">
+                    <p class="current-score-text">Current =</p>
+                    <p class="current-score-val">5</p>
+                </div>
+                <div class="top-score">
+                    <p class="top-score-text">Highest =</p>
+                    <p class="top-score-val">12</p>
+                </div>
+                <div class="global-leaderboard">
+                    <button class="global-leaderboard-button">Global Leaderboard</button>
+                </div>
+            </div>
+            <div class="leaderboard">
+                <div class="heading">
+                    <h1 class="heading-text leaderboard-heading-text">Leaderboards</h1>
+                </div>
+                <div class="form-section">
+                    <form class="form-leaderboard">
+                        <input class="form-leaderboard-input" type="text" placeholder="Your name" />
+                        <input class="form-leaderboard-score" type="number" disabled value="20" />
+                        <input type="submit" class="form-leaderboard-submit" value="Save" />
+                    </form>
+                </div>
+                <div class="scores">
+                    <table class="scores-table"></table>
+                </div>
+            </div>
+        </div>
+        <!-- FOR FIREBASE AND FIRESTORE -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+
+        <script src="./js/utils.js"></script>
+        <script src="./js/words.js"></script>
+        <script src="./js/score.js"></script>
+        <script src="./js/ui.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
